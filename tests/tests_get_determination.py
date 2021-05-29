@@ -47,6 +47,19 @@ class MyTestCase(unittest.TestCase):
         answer = round(np.linalg.det(matrix))
         self.assertEqual(result, answer)
 
+    def test_det_matrix_of_redheffer(self):
+        matrix = [
+            [1, 1, 1, 1, 1],
+            [1, 1, 0, 1, 0],
+            [1, 0, 1, 0, 0],
+            [1, 0, 0, 1, 0],
+            [1, 0, 0, 0, 1]
+        ]
+        result = det.get_determination(matrix)
+        answer = np.linalg.det(matrix)
+        print(answer)
+        self.assertEqual(result, answer)
+
 
 if __name__ == '__main__':
     unittest.main()
