@@ -31,5 +31,3 @@ def get_determination(matrix):
     return result_determinant
 
 
-Z = np.random.random((10, 10))
-print(Z)
