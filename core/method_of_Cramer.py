@@ -1,18 +1,5 @@
 import core.det as det
 import copy as copy
-import numpy as np
-
-matrix_var = [
-    [1, 0, 1],
-    [2, 1, 3],
-    [3, 4, 5]
-]
-
-free_matrix = [
-    [4],
-    [5],
-    [8]
-]
 
 
 def method_of_cramer(matrix_of_variables, matrix_of_free_values):
