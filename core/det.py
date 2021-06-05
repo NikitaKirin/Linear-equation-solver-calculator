@@ -29,5 +29,3 @@ def get_determination(matrix):
         result_determinant += ((-1) ** j) * matrix[0][j] * get_determination(get_minor(matrix, 0, j))
 
     return result_determinant
-
-

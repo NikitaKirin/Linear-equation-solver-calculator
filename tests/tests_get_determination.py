@@ -57,6 +57,7 @@ class MyTestCase(unittest.TestCase):
         ]
         result = det.get_determination(matrix)
         answer = np.linalg.det(matrix)
+        print('Определитель матрицы Редхеффера равен ')
         print(answer)
         self.assertEqual(result, answer)
 
